@@ -11,4 +11,4 @@ if (a < 5) {
 
 } if (a == 5) {
 console.log(" Die Zahl ist genau 5 ")
-}
+}   
