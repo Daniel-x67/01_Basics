@@ -9,4 +9,3 @@ if (input !== passwort) {
     console.log("Access denied");
     
 }
-//
