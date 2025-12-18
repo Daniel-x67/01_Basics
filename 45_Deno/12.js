@@ -28,10 +28,4 @@ console.log( Number1 + Number2)
     
     console.log(Number1 / Number2);
     
-}
-
- 
-
-
-
-
+} 
