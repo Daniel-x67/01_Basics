@@ -1,4 +1,4 @@
-let score = 79; // Number(prompt("Enter your score"));
+  Number(prompt("Enter your score"));
 if (score >= 90 && score <= 100) {
     console.log("Grade A");
 } else if (score >= 80 && score <= 89) {
