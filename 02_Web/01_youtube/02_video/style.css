@@ -1,0 +1,16 @@
+div {
+  color: rgb(121, 16, 16);
+}
+
+.header {
+  background-color: violet;
+}
+
+.header2 {
+  background-color: rgb(144, 79, 122);
+}
+
+p {
+  background-color: rgb(144, 79, 122);
+  margin-top: 10px;
+}

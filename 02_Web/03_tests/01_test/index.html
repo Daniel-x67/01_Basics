@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<script src="script.js" >    </script>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DC Member Liste</title>
+    <style>
+        body {
+            background-color: #1a1c1e;
+
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: white;
+        }
+
+        .container {
+            background: #2b2d31;
+
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+            width: 320px;
+            text-align: center;
+        }
+
+        h1 {
+            background-color: #57f287;
+
+            color: #1a1c1e;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 12px;
+            font-size: 24px;
+            margin-bottom: 30px;
+            margin-top: 0;
+        }
+
+        ul {
+            list-style: none;
+
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        li {
+            background: #313338;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            transition: all 0.2s ease;
+            border-left: 4px solid transparent;
+            font-size: 18px;
+        }
+
+
+        li:hover {
+            background: #383a40;
+            transform: translateX(8px);
+            border-left: 4px solid #57f287;
+            cursor: pointer;
+        }
+
+        /* Markierung für dich (Daniel) */
+        .me {
+            color: #57f287;
+            font-weight: bold;
+        }
+
+        .he {
+            color: aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>DC Member</h1>
+
+        <ul>
+            <li id="Tim">Tim</li>
+            <li class="he">Sebi</li>
+            <li>Lenny</li>
+            <li class="me">Daniel</li>
+            <li>Philip</li>
+            <li>Kilian</li>
+            <li>Nikki</li>
+            <li>Duelli</li>
+
+        </ul>
+    </div>
+
+</body>
+
+</html>
