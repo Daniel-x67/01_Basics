@@ -1,0 +1,20 @@
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+
+
+
+.card {
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 200px;
+}
+
+.card-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  }

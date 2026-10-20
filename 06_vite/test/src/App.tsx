@@ -1,13 +1,16 @@
-
-import Components, { Pointcounter } from './Components'
-
+import "./App.css";
+import Card from "./card";
 function App() {
   return (
     <>
-      <Components />
-      <Pointcounter />
+      <h1>Wilkommen</h1>
+
+      <div className="card-container">
+        <Card />
+        <Card />
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
