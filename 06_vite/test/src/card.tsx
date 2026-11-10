@@ -1,12 +1,21 @@
 import React from "react";
+import styles from "./card.module.css";
 
-type Props = {};
+type Props = {
+  title: string;
+  text: string;
+  image: string;
+};
 
-export default function card({}: Props) {
+export default function card({ title, text, image }: Props) {
+  const random = Math.floor(Math.random() * 10);
+
   return (
-    <div className="card">
-      <h2>Tim</h2>
-      <img src="https://picsum.photos/200/300" alt="Hero" />
+    <div className={styles.card}>
+      <h2>{title}</h2>
+      <img src={image + "?" + random} alt="Hero" />
+      <p>{text}</p>
+      <p>{random}</p>
     </div>
   );
 }
