@@ -6,27 +6,27 @@ type Props = {
   text: string;
   image: string;
 };
-
+const words = [
+  "happy",
+  "sad",
+  "angry",
+  "excited",
+  "bored",
+  "tired",
+  "hungry",
+  "thirsty",
+  "confused",
+  "curious",
+];
 export default function card({ title, text, image }: Props) {
-  const randomMath = Math.floor(Math.random() * 10);
-
-  const words = [
-    "happy",
-    "sad",
-    "angry",
-    "excited",
-    "bored",
-    "tired",
-    "hungry",
-    "thirsty",
-    "confused",
-    "curious",
-  ];
   // strg - blank
   const [counter, setCounter] = useState(0);
+  const randomMath = Math.floor(Math.random() * 10);
+  const [imageUrl, setImageUrl] = useState(image + "?" + randomMath);
+
   const index = Math.floor(Math.random() * words.length);
   const randomWords = words[index];
-  const [random, setRandom] = useState(Math.random());
+
   return (
     <div
       className={styles.card}
@@ -37,14 +37,14 @@ export default function card({ title, text, image }: Props) {
       }}
     >
       <h2>{title}</h2>
-      <img src={image + "?" + randomMath} alt="Hero" />
+      <img src={imageUrl} alt="Hero" />
       <p>{text}</p>
       <p>{randomMath}</p>
       <p>{randomWords}</p>
       <p>Amount of clicks {counter}</p>
       <button
         onClick={() => {
-          setRandom(Math.random());
+          setImageUrl(image + "?" + Math.random());
         }}
       >
         Change Image
